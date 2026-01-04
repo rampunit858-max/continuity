@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Continuity | Live Feed Prototype</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>Continuity</h1>
+
+    <textarea id="thought" placeholder="What feels important right now?"></textarea>
+    <select id="mood">
+      <option value="calm">Calm</option>
+      <option value="heavy">Heavy</option>
+      <option value="hopeful">Hopeful</option>
+    </select>
+    <button id="save">Save this moment</button>
+    <button id="clearAll">Clear All Memories</button>
+
+    <div class="memory-feed" id="feed"></div>
+
+    <div id="memory" class="hidden"></div>
+
+    <div class="decision hidden">
+      <button id="yes">Still matters</button>
+      <button id="no">Not anymore</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
